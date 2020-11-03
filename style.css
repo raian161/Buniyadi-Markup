@@ -18,10 +18,12 @@ h1 {
 }
 .header {
   background-color: white;
-  width: 10%;
-  height: 10px;
+  width: 100%;
+  height: 100px;
   position: fixed;
   z-index: 10;
+  background: white;
+  border-bottom: 1px solid grey;
 }
 .main {
   height: 100%;
@@ -29,10 +31,10 @@ h1 {
   padding: 10px 50px;
 }
 #sidebarMenu {
-  height: 100%;
+  height: 90%;
   position: fixed;
+  top: 41px;
   left: 0;
-  top: 0;
   width: 250px;
   margin-top: 60px;
   transform: translateX(-250px);
@@ -96,4 +98,56 @@ input#openSidebarMenu {
   padding-left: 3%;
   padding-top: 0%;
   position: fixed;
+}
+
+.divider {
+  padding: 0 8%;
+}
+.divider .line {
+  height: 1px;
+  width: 100%;
+  background: grey;
+}
+
+.nav-holder {
+  position: fixed;
+  top: 0;
+  left: 18%;
+  height: 100px;
+  padding: 0 30px;
+  width: calc(100vw - 18%);
+  background: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#big-search {
+  height: 50px;
+  border-radius: 10px;
+  flex-grow: 3;
+  font-size: 20px;
+}
+
+#big-search::placeholder {
+  text-align: center;
+}
+
+#btn-grp {
+  height: 100px;
+  padding: 0 30px;
+  flex-grow: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+#btn-grp > * {
+  height: 50px;
+}
+
+#sidebarMenu .icon {
+  height: 15px;
+  width: 15px;
 }
