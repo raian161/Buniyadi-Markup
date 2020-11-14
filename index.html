@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="sidebar.js"></script>
     <title>Home</title>
     <style>
         .fontawesome {
@@ -15,7 +17,32 @@
 <body>
     <header>
         <!-- Logo -->
-        <button>Menu</button>
+        <input type="checkbox" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner top"></div>
+            <div class="spinner middle"></div>
+            <div class="spinner bottom"></div>
+        </label>
+        <div id="sidebarMenu">
+            <ul class="menu">
+    
+    
+                <li><a href="#"><img class="icon" src="img/offer.png" alt="" style="height: 3.9vh;"> offer/DiscoUnt</a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Packages</a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Seasonal Products </a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> New Products</a></li>
+                <li class="divider"><div class="line"></div></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Rice and Staples</a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Fresh fruits</a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Vegetables</a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Pickles</a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Dry fish</a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> spices </a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Tonics </a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> organic items </a></li>
+    
+            </ul>
+        </div>
         <div class="logo">
             <a href="#">
                 <img src="img/logo.svg" alt="">
@@ -39,6 +66,28 @@
         </div>
     </header>
     <div class="hero-img">
+        <!-- <div id="sidebarMenu">
+            <ul class="menu">
+    
+    
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> offer/DiscoUnt</a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Packages</a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Seasonal Products </a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> New Products</a></li>
+                <li class="divider"><div class="line"></div></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Rice and Staples</a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Fresh fruits</a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Vegetables</a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Pickles</a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Dry fish</a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> spices </a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Tonics </a></li>
+                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> organic items </a></li>
+    
+            </ul>
+        </div> -->
+
+
         <div class="center-container">
             <h1>Original & Trusted</h1>
             <img src="img/logo.svg" alt="">
@@ -52,6 +101,11 @@
         </div>
     </div>
     <main>
+        <!-- main sidebar start -->
+        
+
+
+        <!-- main sidebar end -->
         <!-- Categories -->
         <h3 class="box-title">Categories</h3>
         <div class="category-container">

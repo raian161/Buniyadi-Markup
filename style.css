@@ -37,6 +37,7 @@ body header {
 body header .logo a img {
   width: 9.97vw;
   height: 4.86vh;
+  margin-left: 60px;
 }
 
 body header .inp-holder {
