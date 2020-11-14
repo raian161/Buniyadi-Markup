@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 11.48vh 81.48vh auto 59.54vh;
+  grid-template-areas:
+    "h h h h h h h h"
+    "i i i i i i i i"
+    "m m m m m m m m"
+    "f f f f f f f f";
+
+  header {
+    background: deepskyblue;
+    grid-area: h;
+
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height: 11.48vh;
+    width: 100vw;
+
+    // Logo
+    .logo {
+      a {
+        img {
+          width: 9.97vw;
+          height: 4.86vh;
+        }
+      }
+    }
+
+    .inp-holder {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+
+      input {
+        width: 36.14vw;
+        height: 5.46vh;
+        border-radius: 8px;
+
+        &::placeholder {
+          text-align: center;
+        }
+      }
+    }
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      padding: 0 30px;
+
+      > * {
+        margin: 0 5px;
+        padding: 5px;
+      }
+
+      .info-btn {
+        height: 5.5vh;
+        width: 3vw;
+        border-radius: 8px;
+        margin: 0 10px;
+        border: none;
+        position: relative;
+
+        .notif {
+          position: fixed;
+          background: green;
+          color: #fff;
+          padding: 10px;
+          border-radius: 70%;
+          transform: translate(1.8vw, -6vh);
+        }
+      }
+
+      .usr-img {
+        background-image: url("./img/demo.png");
+        background-size: cover;
+        height: 6.57vh;
+        width: 3.69vw;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .hero-img {
+    grid-area: i;
+    background-image: url("./img/tasty-appetizing-farm-organic-vegetables-with-healthy-grocery-light-background-healthy-eating-concept-top-view.svg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .center-container {
+      width: 49.27vw;
+      height: 15.46vh;
+      border-radius: 30px;
+      background: linear-gradient(rgba(255, 255, 255, 0.8));
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+
+      h1 {
+        font-size: 7.4vh;
+      }
+    }
+    .sticker {
+      width: 9.21vw;
+      height: 15.92vh;
+      background: linear-gradient(rgba(green, 0.8));
+      border-radius: 30px;
+      margin-left: auto;
+    }
+  }
+
+  main {
+    grid-area: m;
+    padding: 0 6.51vw;
+
+    .box-title {
+      font-size: 6vh;
+      text-align: center;
+      margin-bottom: 5vh;
+    }
+    .category-container {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(4, 1fr);
+
+      padding: 7.5vh 0;
+
+      .box {
+        width: 21vw;
+        height: 22vh;
+        padding: 50px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .category {
+          font-size: 3.7vh;
+        }
+      }
+    }
+
+    // Products
+    .product-container {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(5, 1fr);
+      .product-card {
+        height: 43vh;
+        border: 5px solid aqua;
+        border-radius: 20px;
+        padding: 10px;
+
+        img {
+          width: 14.42vw;
+          height: 21vh;
+        }
+        .sticker {
+          background: red;
+          color: #fff;
+          width: 4.3vw;
+          height: 4.4vh;
+          text-align: center;
+          font-size: 2.5vh;
+        }
+        h4 {
+          font-size: 3.7vh;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card-bottom {
+          margin-top: 10px;
+          display: flex;
+          & > * {
+            padding: 0 5px;
+          }
+          .btn-ctrl {
+            flex: 1;
+            display: flex;
+
+            .product-btn {
+              flex: 1;
+              padding: 10px;
+              border: none;
+              box-shadow: 0 5px 10px rgba(#000, 0.4);
+
+              &:nth-child(1) {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                background: #fff;
+              }
+              &:nth-child(2) {
+                background: #fcfcfc;
+              }
+              &:nth-child(3) {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                background: #fff;
+              }
+            }
+          }
+          a {
+            flex: 1;
+            background: green;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 2vh;
+            img {
+              width: 1.28vw;
+              height: 2vh;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    background: deepskyblue;
+    grid-area: f;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+  header {
+    background: deepskyblue;
+    grid-area: h;
+
+    display: flex;
+    align-items: center;
+
+    .inp-holder {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+
+      input {
+        width: 36.14vw;
+        height: 5.46vh;
+        border-radius: 8px;
+
+        &::placeholder {
+          text-align: center;
+        }
+      }
+    }
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      padding: 0 10px;
+
+      > * {
+        margin: 0 5px;
+        padding: 5px;
+      }
+
+      .info-btn {
+        height: 5.5vh;
+        width: 3vw;
+        border-radius: 8px;
+        margin: 0 10px;
+        border: none;
+        position: relative;
+
+        .notif {
+          background: green;
+          color: #fff;
+          padding: 10px;
+          border-radius: 70%;
+          transform: translate(2vw, -8vh);
+        }
+      }
+
+      .usr-img {
+        background-image: url("./img/demo.png");
+        background-size: cover;
+        height: 6.57vh;
+        width: 3.69vw;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+.card-container {
+  width: 100%;
+  height: 50vh;
+  border: 5px solid brown;
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+
+  .card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px grey;
+    padding: 10px;
+    position: relative;
+
+    .card-top {
+      width: 100%;
+      height: 65%;
+
+      .sticker {
+        width: 3vw;
+        background: red;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        z-index: 9;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      img {
+        height: 30vh;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+      }
+    }
+
+    .product-name,
+    .product-price {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .product-name {
+      font-size: 2.7vh;
+    }
+    .product-price {
+      font-size: 2vh;
+    }
+
+    .card-bottom {
+      height: 8vh;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+
+      // .btn-grp {
+      //     display: flex;
+      //     width: 100%;
+      //     .button {
+      //         flex: 1;
+      //     }
+      //     .add {
+      //         flex: 10;
+      //         padding: 0 10px;
+      //     }
+      // }
+      display: flex;
+      .btn-grp {
+        flex: 1;
+        border: 1px solid gray;
+        border-radius: 5px;
+        margin-right: 5px;
+        height: 4vh;
+        display: flex;
+
+        .button {
+          height: 4vh;
+          flex: 1;
+          border: none;
+
+          &:nth-child(1) {
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            background: white;
+          }
+          &:nth-child(2) {
+            background: lightgrey;
+          }
+          &:nth-child(3) {
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+            background: white;
+          }
+        }
+      }
+      .add {
+        padding: 5px;
+        flex: 1.5;
+        border: 1px solid grey;
+        border-radius: 10px;
+        margin-left: 5px;
+        height: 4vh;
+        background-color: green;
+        color: white;
+      }
+    }
+  }
+}
