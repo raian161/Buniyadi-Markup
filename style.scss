@@ -121,6 +121,25 @@ body {
       background: linear-gradient(rgba(green, 0.8));
       border-radius: 30px;
       margin-left: auto;
+
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      div {
+        color:white;
+        font-size: 25px;
+      }
+      button {
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 20px;
+        border: none;
+        margin-top: 1vh;
+
+      }
     }
   }
 
