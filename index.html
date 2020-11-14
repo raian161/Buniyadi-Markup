@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <title>Home</title>
+    <style>
+        .fontawesome {
+            font-family: Helvetica,'FontAwesome',sans-serif;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,9 +21,12 @@
                 <img src="img/logo.svg" alt="">
             </a>
         </div>
-        <div class="inp-holder"><input type="text" name="" id="" placeholder="Search"></div>
+        <div class="inp-holder"><input class="fontawesome" type="text" name="" id="" placeholder=" &#xF002; I am looking for" style="font-family: Arial, 'Font Awesome 5 Free';"></div> 
         <div class="btn-container">
-            <button class="info-btn">Shop</button>
+            <button class="info-btn" style="display: flex; justify-content: center; align-items: center; font-size: 20px;width: 6.25vw;">
+                <img src="img/grid.png" alt="" style="margin-right: 5px;">
+                Shop
+            </button>
             <button class="info-btn">
                 <img src="img/cart.svg" alt="">
                 <div class="notif">1</div>
@@ -40,7 +49,7 @@
         <!-- Categories -->
         <h3 class="box-title">Categories</h3>
         <div class="category-container">
-            <div class="box" style="background: url('./img/rice.svg'); background-size: cover;">
+            <div class="box" style="background: url('./img/rice.png'); background-size: cover;">
                 <p class="category">Rice & Staples</p>
             </div>
             <div class="box" style="background: url('./img/freshfruit.png'); background-size: cover;">
@@ -67,32 +76,12 @@
         </div>
 
         <!-- Popular Product -->
-        <!DOCTYPE html>
         <h3 class="box-title">Popular Products</h3>
-        
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-            crossorigin="anonymous"
-        />
-        <title>Card</title>
-    </head>
-    <body>
         <div class="card-container">
             <div class="card">
                 <div class="card-top">
                     <div class="sticker">-15%</div>
-                    <img src="product-01.png" alt="img" />
+                    <img src="./img/product-01.png" alt="img" />
                 </div>
                 <div class="product-name">Green Cabbage</div>
                 <div class="product-price">
@@ -114,7 +103,7 @@
             <div class="card">
                 <div class="card-top">
                     <div class="sticker">-15%</div>
-                    <img src="rice.svg" alt="img" />
+                    <img src="./img/product-02.png" alt="img" />
                 </div>
                 <div class="product-name">Green Cabbage</div>
                 <div class="product-price">
@@ -136,7 +125,7 @@
             <div class="card">
                 <div class="card-top">
                     <div class="sticker">-15%</div>
-                    <img src="product-01.png" alt="img" />
+                    <img src="./img/product-03.png" alt="img" />
                 </div>
                 <div class="product-name">Green Cabbage</div>
                 <div class="product-price">
@@ -158,7 +147,7 @@
             <div class="card">
                 <div class="card-top">
                     <div class="sticker">-15%</div>
-                    <img src="product-01.png" alt="img" />
+                    <img src="./img/product-04.png" alt="img" />
                 </div>
                 <div class="product-name">Green Cabbage</div>
                 <div class="product-price">
@@ -180,7 +169,7 @@
             <div class="card">
                 <div class="card-top">
                     <div class="sticker">-15%</div>
-                    <img src="product-01.png" alt="img" />
+                    <img src="./img/product-05.png" alt="img" />
                 </div>
                 <div class="product-name">Green Cabbage</div>
                 <div class="product-price">
@@ -200,11 +189,418 @@
                 </div>
             </div>
         </div>
-    </body>
-</html>
+        <!-- product end -->
+
+         <!-- New Arraival Start -->
+         <h3 class="box-title">New Arraival</h3>
+         <div class="card-container">
+             <div class="card">
+                 <div class="card-top">
+                     <div class="sticker">-15%</div>
+                     <img src="./img/toma.png" alt="img" />
+                 </div>
+                 <div class="product-name">Green Cabbage</div>
+                 <div class="product-price">
+                     BDT
+                     <span style="font-size: 2.7vh; font-weight: bold">40</span>
+                     / KG
+                 </div>
+                 <div class="card-bottom">
+                     <div class="btn-grp">
+                         <button class="button">-</button>
+                         <button class="button">1</button>
+                         <button class="button">+</button>
+                     </div>
+                     <div class="add">
+                         <i class="fas fa-shopping-bag"></i> Add To Cart
+                     </div>
+                 </div>
+             </div>
+             <div class="card">
+                 <div class="card-top">
+                     <div class="sticker">-15%</div>
+                     <img src="./img/toma.png" alt="img" />
+                 </div>
+                 <div class="product-name">Green Cabbage</div>
+                 <div class="product-price">
+                     BDT
+                     <span style="font-size: 2.7vh; font-weight: bold">40</span>
+                     / KG
+                 </div>
+                 <div class="card-bottom">
+                     <div class="btn-grp">
+                         <button class="button">-</button>
+                         <button class="button">1</button>
+                         <button class="button">+</button>
+                     </div>
+                     <div class="add">
+                         <i class="fas fa-shopping-bag"></i> Add To Cart
+                     </div>
+                 </div>
+             </div>
+             <div class="card">
+                 <div class="card-top">
+                     <div class="sticker">-15%</div>
+                     <img src="./img/toma.png" alt="img" />
+                 </div>
+                 <div class="product-name">Green Cabbage</div>
+                 <div class="product-price">
+                     BDT
+                     <span style="font-size: 2.7vh; font-weight: bold">40</span>
+                     / KG
+                 </div>
+                 <div class="card-bottom">
+                     <div class="btn-grp">
+                         <button class="button">-</button>
+                         <button class="button">1</button>
+                         <button class="button">+</button>
+                     </div>
+                     <div class="add">
+                         <i class="fas fa-shopping-bag"></i> Add To Cart
+                     </div>
+                 </div>
+             </div>
+             <div class="card">
+                 <div class="card-top">
+                     <div class="sticker">-15%</div>
+                     <img src="./img/toma.png" alt="img" />
+                 </div>
+                 <div class="product-name">Green Cabbage</div>
+                 <div class="product-price">
+                     BDT
+                     <span style="font-size: 2.7vh; font-weight: bold">40</span>
+                     / KG
+                 </div>
+                 <div class="card-bottom">
+                     <div class="btn-grp">
+                         <button class="button">-</button>
+                         <button class="button">1</button>
+                         <button class="button">+</button>
+                     </div>
+                     <div class="add">
+                         <i class="fas fa-shopping-bag"></i> Add To Cart
+                     </div>
+                 </div>
+             </div>
+             <div class="card">
+                 <div class="card-top">
+                     <div class="sticker">-15%</div>
+                     <img src="./img/toma.png" alt="img" />
+                 </div>
+                 <div class="product-name">Green Cabbage</div>
+                 <div class="product-price">
+                     BDT
+                     <span style="font-size: 2.7vh; font-weight: bold">40</span>
+                     / KG
+                 </div>
+                 <div class="card-bottom">
+                     <div class="btn-grp">
+                         <button class="button">-</button>
+                         <button class="button">1</button>
+                         <button class="button">+</button>
+                     </div>
+                     <div class="add">
+                         <i class="fas fa-shopping-bag"></i> Add To Cart
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- new arraival end -->
+
+          <!-- top category start -->
+        <h3 class="box-title">Top Category </h3>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-top">
+                    <div class="sticker">-15%</div>
+                    <img src="./img/toma.png" alt="img" />
+                </div>
+                <div class="product-name">Green Cabbage</div>
+                <div class="product-price">
+                    BDT
+                    <span style="font-size: 2.7vh; font-weight: bold">40</span>
+                    / KG
+                </div>
+                <div class="card-bottom">
+                    <div class="btn-grp">
+                        <button class="button">-</button>
+                        <button class="button">1</button>
+                        <button class="button">+</button>
+                    </div>
+                    <div class="add">
+                        <i class="fas fa-shopping-bag"></i> Add To Cart
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <div class="sticker">-15%</div>
+                    <img src="./img/toma.png" alt="img" />
+                </div>
+                <div class="product-name">Green Cabbage</div>
+                <div class="product-price">
+                    BDT
+                    <span style="font-size: 2.7vh; font-weight: bold">40</span>
+                    / KG
+                </div>
+                <div class="card-bottom">
+                    <div class="btn-grp">
+                        <button class="button">-</button>
+                        <button class="button">1</button>
+                        <button class="button">+</button>
+                    </div>
+                    <div class="add">
+                        <i class="fas fa-shopping-bag"></i> Add To Cart
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <div class="sticker">-15%</div>
+                    <img src="./img/toma.png" alt="img" />
+                </div>
+                <div class="product-name">Green Cabbage</div>
+                <div class="product-price">
+                    BDT
+                    <span style="font-size: 2.7vh; font-weight: bold">40</span>
+                    / KG
+                </div>
+                <div class="card-bottom">
+                    <div class="btn-grp">
+                        <button class="button">-</button>
+                        <button class="button">1</button>
+                        <button class="button">+</button>
+                    </div>
+                    <div class="add">
+                        <i class="fas fa-shopping-bag"></i> Add To Cart
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <div class="sticker">-15%</div>
+                    <img src="./img/toma.png" alt="img" />
+                </div>
+                <div class="product-name">Green Cabbage</div>
+                <div class="product-price">
+                    BDT
+                    <span style="font-size: 2.7vh; font-weight: bold">40</span>
+                    / KG
+                </div>
+                <div class="card-bottom">
+                    <div class="btn-grp">
+                        <button class="button">-</button>
+                        <button class="button">1</button>
+                        <button class="button">+</button>
+                    </div>
+                    <div class="add">
+                        <i class="fas fa-shopping-bag"></i> Add To Cart
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <div class="sticker">-15%</div>
+                    <img src="./img/toma.png" alt="img" />
+                </div>
+                <div class="product-name">Green Cabbage</div>
+                <div class="product-price">
+                    BDT
+                    <span style="font-size: 2.7vh; font-weight: bold">40</span>
+                    / KG
+                </div>
+                <div class="card-bottom">
+                    <div class="btn-grp">
+                        <button class="button">-</button>
+                        <button class="button">1</button>
+                        <button class="button">+</button>
+                    </div>
+                    <div class="add">
+                        <i class="fas fa-shopping-bag"></i> Add To Cart
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- top category end -->
+
+        <!-- three step start -->
+        <h3 class="box-title">Three Steps To Order</h3>
+        <div class="three-steps">
+            <div class="step">
+                <img src="img/step1.png" alt="" class="step-image">
+                <h5 class="step-name">Select Products</h5>
+                <p class="step-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                </p>
+            </div>
+
+            <div class="step">
+                <img src="img/step2.png" alt="" class="step-image">
+                <h5 class="step-name">Select Products</h5>
+                <p class="step-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                </p>
+            </div>
+
+            <div class="step">
+                <img src="img/step3.png" alt="" class="step-image">
+                <h5 class="step-name">Select Products</h5>
+                <p class="step-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                </p>
+            </div>
+        </div>
+        <!-- three step end -->
+
+        <!-- why choose us start -->
+
+        <h3 class="box-title">Why Choose Us</h3>
+        <div class="why-steps">
+            <div class="why-step">
+                <img src="img/why-choose1.png" alt="" class="why-step-image">
+                <h5 class="why-step-name">Select Products</h5>
+                <p class="why-step-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                </p>
+            </div>
+
+            <div class="why-step">
+                <img src="img/why-choose2.png" alt="" class="why-step-image">
+                <h5 class="why-step-name">Select Products</h5>
+                <p class="why-step-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                </p>
+            </div>
+
+            <div class="why-step">
+                <img src="img/why-choose3.png" alt="" class="why-step-image">
+                <h5 class="why-step-name">Select Products</h5>
+                <p class="why-step-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                </p>
+            </div>
+
+            <div class="why-step">
+                <img src="img/why-choose4.png" alt="" class="why-step-image">
+                <h5 class="why-step-name">Select Products</h5>
+                <p class="why-step-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                </p>
+            </div>
+        </div>
+        <!-- why choose us end -->
+
+        
+        <!-- featured  start -->
+
+        <h3 class="box-title">Featured Post</h3>
+        <div class="feature-steps">
+            <div class="feature-step" id="feature-1" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url('./img/feature.png');">
+                <h5 class="feature-days">Select Products</h5>
+                <p class="feature-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                </p>
+            </div>
+
+            <div class="feature-step" id="feature-2"  style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url('./img/feature2.png');">
+                <h5 class="feature-days">Select Products</h5>
+                <p class="feature-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                </p>
+            </div>
+
+            <div class="feature-step" id="feature-3" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url('./img/feature3.png');">
+                <h5 class="feature-days">Select Products</h5>
+                <p class="feature-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                </p>
+            </div>
+        </div>
+        <!-- featured post end -->
+
+        <!-- sale  section start-->
+        <div class="sale-container">
+            <div class="sale-card" style="background-image: url('./img/banner1.png');" ></div>
+            <div class="sale-card" style="background-image: url('./img/banner2.png');"></div>
+        </div>
+
+        <!-- sale section end -->
 
 
     </main>
-    <footer>Footer</footer>
+    <footer>
+        <!-- footer top start -->
+        <div class="footer-top">
+         <div class="footer-info">
+             <div class="footer-info-small">
+                 <img src="img/phone.png" alt=""> <p> 011 313131 31313 </p>
+             </div>
+             <div class="footer-info-small">
+                 <img src="img/envelop.png" alt=""> <p>myuser@gmail.com</p>
+             </div>
+             <div class="footer-info-big">
+                 <p>Follow us</p>
+                 <div class="icons">
+                     <img src="img/fb.png" alt="">
+                     <img src="img/insta.png" alt="">
+                     <img src="img/twitter.png" alt="">
+                     <img src="img/pinterest.png" alt="">
+                     <img src="img/youtube.png" alt="">
+                     <img src="img/whatsapp.png" alt="">
+                 </div>
+             </div>
+         </div>
+         <div class="footer-content">
+             <div class="footer-content-big">
+                <p style="font-size: 20px; margin-bottom: 2vh;">Download our mobile app by visit the </p>
+                 <div class="footer-search">
+                     <input type="tel" placeholder="Enter your mobile number">
+                     <button>
+                         <img src="img/green-mobile.png" alt="">
+                     </button>
+                 </div>
+             </div>
+             <div class="footer-content-big"></div>
+             <div class="footer-content-small">
+                 <h4>Delivery</h4>
+                 <br>
+                 <a href="">complain and return</a>
+                 <a href="">complain and return</a>
+                 <a href="">complain and return</a>
+                </div>
+             <div class="footer-content-small">
+                <h4>Offer</h4>
+                <br> 
+                <a href="">complain and return</a>
+                 <a href="">complain and return</a>
+                 <a href="">complain and return</a>
+             </div>
+             <div class="footer-content-small">
+                <h4>Get in touch</h4>
+                <br>
+                <a href="">complain and return</a>
+                 <a href="">complain and return</a>
+                 <a href="">complain and return</a>
+             </div>
+         </div>   
+        </div>
+        <!-- footer top end -->
+
+        <!-- footer bottom start -->
+        <div class="footer-bottom">
+            <p>This particular text part will cover the main details of Buniyadi. As this page is dynamic, the static text should always give proper solution to search engine
+                optimization in google, bing or others. This particular text part will be covering the main details of Buniyadi. As this page is dynamic, the static text should give
+                proper solution to SEO in google et al </p>
+
+                <div class="copyright">
+                    <p style="margin-left: 6.5vw;">@ 2020 Buniyadi. All Rights Reserved.</p>
+                    <p>Terms and Conditions |
+                        Privacy Policy</p>
+                </div>
+
+
+        </div>
+        <!-- footer bottom end -->
+    </footer>
 </body>
 </html>

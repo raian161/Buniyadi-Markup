@@ -19,6 +19,7 @@ body {
     background: deepskyblue;
     grid-area: h;
 
+    z-index: 100;
     display: flex;
     align-items: center;
     position: fixed;
@@ -79,18 +80,20 @@ body {
       }
 
       .usr-img {
-        background-image: url("./img/demo.png");
+        background-image: url("./img/admin.png");
         background-size: cover;
         height: 6.57vh;
         width: 3.69vw;
-        border-radius: 50%;
+        border-radius: 65%;
+        border: none;
+        box-shadow: 0 2px 4px grey;
       }
     }
   }
 
   .hero-img {
     grid-area: i;
-    background-image: url("./img/tasty-appetizing-farm-organic-vegetables-with-healthy-grocery-light-background-healthy-eating-concept-top-view.svg");
+    background-image: url("./img/hero.png");
     background-size: cover;
     display: flex;
     align-items: center;
@@ -226,11 +229,269 @@ body {
         }
       }
     }
+
+    .three-steps {
+      height: 50vh;
+      margin-bottom: 3vh;
+
+      display: flex;
+      justify-content: space-between;
+
+      .step {
+        height: 50vh;
+        width: 28vw;
+        
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 4px grey;
+
+        display: flex;
+        flex-direction: column;
+
+        & > * {
+          margin: 0 auto;
+        }
+
+        .step-image {
+          width: 10.69vw;
+          height: 18.24vh;
+        }
+        .step-name {
+          font-size: 2.77vh;
+          margin: 1vh 0;
+          text-align: center;
+        }
+        .step-text {
+          font-size: 2.31vh;
+          margin: 1vh 0;
+          text-align: center;
+        }
+      }
+    }
+
+    .why-steps {
+      height: 46.48vh;
+     
+      margin-bottom: 2vh;
+     
+      display: flex;
+      justify-content: space-between;
+
+      .why-step {
+        height: 46vh;
+        width: 20.98vw;
+        // border: 2px solid red;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 4px grey;
+
+        display: flex;
+        flex-direction: column;
+
+        & > * {
+          margin: 0 auto;
+        }
+
+        .why-step-image {
+          width: 10.69vw;
+          height: 18.24vh;
+        }
+        .why-step-name {
+          font-size: 2.77vh;
+          margin: 1vh 0;
+          text-align: center;
+          
+        }
+        .why-step-text {
+          font-size: 1.94vh;
+          margin: 1vh 0;
+          text-align: center;
+        }
+      }
+      
+    }
+    .feature-steps {
+        height: 50vh;
+        border: 2px solid grey;
+        margin-bottom: 3vh;
+  
+        display: flex;
+        justify-content: space-between;
+  
+        .feature-step {
+          height: 50vh;
+          width: 28vw;
+          border: 2px solid red;
+          border-radius: 10px;
+          padding: 20px;
+          background-size: cover;
+          display: flex;
+          flex-direction: column;
+  
+          .feature-days {
+            font-size: 1.85vh;
+            color: white;
+            margin-top: auto;
+            
+          }
+          .feature-text {
+            font-size: 2.5vh;
+            color: white;
+            
+          }
+        }
+      }
+      .sale-container {
+        height: 36.2vh;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2vh;
+
+        .sale-card {
+          height: 36.2vh;
+          width: 42.34vw;
+          background-size: cover;
+          border-radius: 40px;
+        }
+      }
   }
 
   footer {
     background: deepskyblue;
     grid-area: f;
+    //padding: 0 6.51vw;
+    color: grey;
+
+    display: flex;
+    flex-direction: column;
+
+    .footer-top {
+      flex: 2.5;
+      background: #f0f0f0;
+      padding: 2vh 6.51vw;
+
+      display: flex;
+      flex-direction: column;
+
+      .footer-info {
+        flex: 1;
+        border-bottom: 2px solid gray;
+        display: flex;
+
+        .footer-info-small {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          padding: 0 20px;
+          p {
+            font-size: 2.96vh;
+            margin-left: auto;
+          }
+
+        }
+        .footer-info-big {
+          flex: 2;
+          display: flex;
+          align-items: center;
+          padding: 0 10px;
+          p {
+            margin-left: 200px;
+            font-size: 2.77vh;
+          }
+          .icons {
+            flex: 1;
+            padding: 0 10px;
+            display: flex;
+             & > * {
+               margin: 0 5px;
+             }
+          }
+        }
+      }
+      .footer-content {
+        flex: 3;
+        padding: 30px;
+
+        display: flex;
+
+        .footer-content-big {
+          flex: 2;
+          height: 19.67vh;
+          margin: 0 10px;
+
+          &:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .footer-search {
+              display: flex;
+
+              height: 6.57vh;
+              width: 100%;
+
+              input {
+                flex: 1;
+                border-radius: 10px;
+                border: none;
+                padding: 20px;
+              }
+              button {
+                background-size: cover;
+                background: #00a50d;
+                width: 3.9vw;
+                border-radius: 10px;
+                border: none;
+              }
+            }
+          }
+          &:nth-child(2) {
+            background-image: url(img/payment-methods.png);
+            background-size: cover;
+          }
+        }
+
+        .footer-content-small {
+          flex: 1;
+          height: 19.67vh;
+          margin: 0 10px;
+          display: flex;
+          flex-direction: column;
+          h4 {
+            padding: 10px;
+            font-size: 25px;
+          }
+          a {
+            text-decoration: none;
+            color: grey;
+            font-size: 22px;
+            margin-bottom: 1vh;
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      flex: 1;
+      background:white;
+      padding: 1vh 3.67vw;
+      display: flex;
+      flex-direction: column;
+      color: grey;
+       p {
+         font-size: 20px;
+       }
+       .copyright {
+         margin-top: auto;
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         p {
+           width: 26.3vw;
+           font-size: 22px;
+
+         }
+       }
+    }
   }
 }
 
