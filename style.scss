@@ -59,22 +59,77 @@ body {
         }
 
       }
-      #cross {
-        background: white;
-        width: 2.93vw;
-        height: 3.7vh;
-        font-size: 3.70vh;
-        color: grey;
-        border: none;
-      }
-      #go {
-        background-color: green;
-        width: 5.88vw;
-        height: 4.62vh;
-        font-size: 3.70vh;
-        color:white;
+      &+#search-card {
+        
+        background: #fff;
+        position: fixed;
+        left: 300px;
+        top: 2.48vh;
+        width: 60.33vw;
+        height: 70.98vh;
         border-radius: 20px;
-        border: none;
+        //box-shadow: 0 10px 20px rgba($color: black, $alpha: 0.6);
+        overflow: auto;
+        padding: 30px 70px;
+
+        .main-search-box {
+          border-bottom: 1px solid grey;
+          padding: 30px 10px;
+          display: flex;
+          input {
+            font-size: 3.70vh;
+            border: none;
+            outline: none;
+            flex: 1;
+            padding: 0 30px;
+          }
+          #cross {
+            background: white;
+            width: 2.93vw;
+            height: 3.7vh;
+            font-size: 3.70vh;
+            color: grey;
+            border: none;
+          }
+          #Go {
+            background-color: green;
+            width: 5.88vw;
+            height: 4.62vh;
+            font-size: 3.70vh;
+            color:white;
+            border-radius: 20px;
+            border: none;
+          }
+        }
+
+        .trending {
+          width: 50%;
+          border-bottom: 1px solid grey;
+          display: flex;
+          padding: 30px 10px;
+          
+          p {
+            font-size: 3.7vh;
+            margin-left: 25px;
+          }
+        }
+        .trending-boxes {
+          width: 100%;
+          padding: 30px 0;
+          display: flex;
+          justify-content: space-around;
+
+          button {
+            padding: 10px 20px;
+            font-size: 25px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            box-shadow: 0 5px 10px grey;
+            background: white;
+
+          }
+        }
       }
     }
     .btn-container {
