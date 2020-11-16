@@ -46,10 +46,35 @@ body {
         width: 36.14vw;
         height: 5.46vh;
         border-radius: 8px;
+        border: none;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba($color:black, $alpha: 0.5);
 
         &::placeholder {
           text-align: center;
         }
+
+        &:focus{
+          outline: none;
+        }
+
+      }
+      #cross {
+        background: white;
+        width: 2.93vw;
+        height: 3.7vh;
+        font-size: 3.70vh;
+        color: grey;
+        border: none;
+      }
+      #go {
+        background-color: green;
+        width: 5.88vw;
+        height: 4.62vh;
+        font-size: 3.70vh;
+        color:white;
+        border-radius: 20px;
+        border: none;
       }
     }
     .btn-container {
@@ -69,6 +94,7 @@ body {
         margin: 0 10px;
         border: none;
         position: relative;
+        outline: none;
 
         .notif {
           position: fixed;
@@ -77,6 +103,42 @@ body {
           padding: 10px;
           border-radius: 70%;
           transform: translate(1.8vw, -6vh);
+        }
+
+        // &#cart:hover + #cart-content, #cart:focus + #cart-content {
+        //   display: block;
+        // }
+
+        &+#cart-content.open {
+          display: block;
+        }
+
+        &+#cart-content {
+          display: none;
+          background: #fcfcfc;
+          position: fixed;
+          right: 0;
+          top: 11.48vh;
+          width: 27.23vw;
+          height: 67.4vh;
+          border-radius: 20px;
+          box-shadow: 0 10px 20px rgba($color: black, $alpha: 0.6);
+          overflow: auto;
+        }
+
+        &+#bell-content {
+          display: none;
+          background: #fcfcfc;
+          position: fixed;
+          right: 120px;
+          top: 11.48vh;
+          width: 13.33vw;
+          height: 23.98vh;
+          box-shadow: 0 10px 20px rgba($color: black, $alpha: 0.6);
+          overflow: auto;
+        } 
+        &+#bell-content.open {
+          display: block;
         }
       }
 
@@ -87,7 +149,23 @@ body {
         width: 3.69vw;
         border-radius: 65%;
         border: none;
+        outline: none;
         box-shadow: 0 2px 4px grey;
+
+        &+#user-content {
+          display: none;
+          background: #fcfcfc;
+          position: fixed;
+          right: 0;
+          top: 11.48vh;
+          width: 13.33vw;
+          height: 26.94vh;
+          box-shadow: 0 10px 20px rgba($color: black, $alpha: 0.6);
+          overflow: auto;
+        } 
+        &+#user-content.open {
+          display: block;
+        }
       }
     }
   }
@@ -341,7 +419,7 @@ body {
         .feature-step {
           height: 50vh;
           width: 28vw;
-          border: 2px solid red;
+         
           border-radius: 10px;
           padding: 20px;
           background-size: cover;

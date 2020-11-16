@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <script src="sidebar.js"></script>
+    
     <title>Home</title>
     <style>
         .fontawesome {
@@ -48,44 +48,48 @@
                 <img src="img/logo.svg" alt="">
             </a>
         </div>
-        <div class="inp-holder"><input class="fontawesome" type="text" name="" id="" placeholder=" &#xF002; I am looking for" style="font-family: Arial, 'Font Awesome 5 Free';"></div> 
+        <div class="inp-holder">
+            <input class="fontawesome" type="text" name="" id="" placeholder=" &#xF002; I am looking for" style="font-family: Arial, 'Font Awesome 5 Free';">
+           
+        </div> 
+
+
         <div class="btn-container">
             <button class="info-btn" style="display: flex; justify-content: center; align-items: center; font-size: 20px;width: 6.25vw;">
                 <img src="img/grid.png" alt="" style="margin-right: 5px;">
                 Shop
             </button>
-            <button class="info-btn">
-                <img src="img/cart.svg" alt="">
+            <button class="info-btn" id="cart">
+                <label for="cart-content-open"><img src="img/cart.svg" alt=""></label>
                 <div class="notif">1</div>
             </button>
-            <button class="info-btn">
+
+            <!-- cart-content start -->
+            <div id="cart-content">
+                
+            </div>
+            <!-- cart-content end -->
+
+            <button class="info-btn" id="bell">
                 <img src="img/bell.svg" alt="">
                 <div class="notif">1</div>
             </button>
-            <button class="usr-img"><img src="admin.png" alt=""></button>
+
+             <!-- bell-content start -->
+             <div id="bell-content" >
+                
+            </div>
+            <!-- bell-content end -->
+            <button class="usr-img" id="user"><img src="admin.png" alt=""></button>
+            <!-- user-content start -->
+            <div id="user-content" >
+                
+            </div>
+            <!-- user-content end -->
         </div>
+        
     </header>
     <div class="hero-img">
-        <!-- <div id="sidebarMenu">
-            <ul class="menu">
-    
-    
-                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> offer/DiscoUnt</a></li>
-                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Packages</a></li>
-                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Seasonal Products </a></li>
-                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> New Products</a></li>
-                <li class="divider"><div class="line"></div></li>
-                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Rice and Staples</a></li>
-                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Fresh fruits</a></li>
-                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Vegetables</a></li>
-                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Pickles</a></li>
-                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Dry fish</a></li>
-                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> spices </a></li>
-                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> Tonics </a></li>
-                <li><a href="#"><img class="icon" src="500px-brands.svg" alt=""> organic items </a></li>
-    
-            </ul>
-        </div> -->
 
 
         <div class="center-container">
@@ -662,5 +666,6 @@
         </div>
         <!-- footer bottom end -->
     </footer>
+    <script src="sidebar.js"></script>
 </body>
 </html>
