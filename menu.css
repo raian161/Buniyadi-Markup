@@ -22,11 +22,20 @@
   .menu li a {
     color: black;
     display: block;
-    padding: 15px;
+    padding: 10px 15px;
     text-transform: uppercase;
     font-weight: normal;
     text-decoration: none;
+    display: flex;
   }
+  .menu li a img {
+    height: 3.9vh;
+  }
+
+  .menu li a span {
+    margin: auto 10px;
+  }
+
   #openSidebarMenu:checked ~ #sidebarMenu {
     transform: translateX(0);
   }

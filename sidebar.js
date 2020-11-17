@@ -10,14 +10,20 @@ var searchCard = document.querySelector('#search-card')
 
 cart.addEventListener('click', () => {
     cartContent.classList.toggle('open')
+    bellContent.classList.remove('open')
+    userContent.classList.remove('open')
 })
 
 bell.addEventListener('click', () => {
     bellContent.classList.toggle('open')
+    cartContent.classList.remove('open')
+    userContent.classList.remove('open')
 })
 
 user.addEventListener('click', () => {
     userContent.classList.toggle('open')
+    bellContent.classList.remove('open')
+    cartContent.classList.remove('open')
 })
 
 mainSearch.addEventListener('focus', () => {
