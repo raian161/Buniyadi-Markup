@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     
     <title>Home</title>
     <style>
@@ -34,17 +34,17 @@
                 </li>
                 <li>
                     <a href="#">
-                        <img class="icon" src="img/offer.png" alt=""> <span>Packages/Bundles</span> 
+                        <img class="icon" src="img/package.png" alt=""> <span>Packages/Bundles</span> 
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img class="icon" src="img/offer.png" alt="" style="height: 3.9vh;"> <span>Seasonal Items</span>
+                        <img class="icon" src="img/seasonal.png" alt="" style="height: 3.9vh;"> <span>Seasonal Items</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img class="icon" src="img/offer.png" alt=""> <span>Discount</span> 
+                        <img class="icon" src="img/discount.png" alt=""> <span>Discount</span> 
                     </a>
                 </li>
 
@@ -52,44 +52,44 @@
 
                 <li>
                     <a href="#">
-                        <img class="icon" src="img/offer.png" alt="" style="height: 3.9vh;"> <span>Rice & Staples</span>
+                        <img class="icon" src="img/rice-icon.png" alt="" style="height: 3.9vh;"> <span>Rice & Staples</span>
                     </a>
                 </li>
                 
 
                 <li>
                     <a href="#">
-                        <img class="icon" src="img/offer.png" alt=""> <span>Fresh Fruits</span> 
+                        <img class="icon" src="img/fruit.png" alt=""> <span>Fresh Fruits</span> 
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img class="icon" src="img/offer.png" alt="" style="height: 3.9vh;"> <span>Vegetables</span>
+                        <img class="icon" src="img/vegetables.png" alt="" style="height: 3.9vh;"> <span>Vegetables</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img class="icon" src="img/offer.png" alt=""> <span>Pickles</span> 
+                        <img class="icon" src="img/pickles-icon.png" alt=""> <span>Pickles</span> 
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img class="icon" src="img/offer.png" alt="" style="height: 3.9vh;"> <span>Dry Fish</span>
+                        <img class="icon" src="img/fish.png" alt="" style="height: 3.9vh;"> <span>Dry Fish</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img class="icon" src="img/offer.png" alt=""> <span>Spices</span> 
+                        <img class="icon" src="img/spices-icon.png" alt=""> <span>Spices</span> 
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img class="icon" src="img/offer.png" alt="" style="height: 3.9vh;"> <span>Tonics</span>
+                        <img class="icon" src="img/tonics.png" alt="" style="height: 3.9vh;"> <span>Tonics</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img class="icon" src="img/offer.png" alt=""> <span>Organic Items</span> 
+                        <img class="icon" src="img/organic-icon.png" alt=""> <span>Organic Items</span> 
                     </a>
                 </li>
                 
@@ -122,18 +122,19 @@
             </a>
         </div>
         <div class="inp-holder" id="search">
-            <input class="fontawesome" type="text" name="" id="main-search" placeholder=" &#xF002; I am looking for" style="font-family: Arial, 'Font Awesome 5 Free';">
+            <!-- <input class="fontawesome" type="text" name="" id="main-search" placeholder=" I am looking for"> -->
+            <input id="main-search" type="text" placeholder="&#xF002; I am looking for" style="font-family:Arial, FontAwesome" />
            
         </div>
         <div id="search-card">
             <div class="main-search-box">
-              <img src="./img/bell.svg" alt="">
+              <img src="./img/search.png" alt="">
               <input type="text" placeholder="I am looking for">
               <button id="cross">X</button>
               <button id="Go">Go</button>  
             </div>
             <div class="trending">
-                <img src="./img/bell.svg" alt="">
+                <img src="./img/trending-search.png" alt="">
                 <p>Trending Searches</p>
             </div>
             <div class="trending-boxes">
@@ -146,7 +147,7 @@
             </div>
 
             <div class="trending">
-                <img src="./img/bell.svg" alt="">
+                <img src="./img/recent-search.png" alt="">
                 <p>Recent Searches</p>
             </div>
             <div class="trending-boxes">
@@ -218,6 +219,22 @@
 
              <!-- bell-content start -->
              <div id="bell-content" >
+                 <div class="four-btn">
+                     <div>Notifications</div>
+                     <div> <a href="Mark All Read">Mark All Read</a></div>
+                     <button class="green-btn">General</button>
+                     <button class="white-btn">Offers</button>
+                 </div>
+                 <div class="bell-body">
+                     <div class="bell-row">
+                         <p class="date">May 21, 2021 </p>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, culpa.</p>
+                     </div>
+                     <div class="bell-row">
+                        <p class="date">May 21, 2021 </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, culpa.</p>
+                    </div>
+                 </div>
                 
             </div>
             <!-- bell-content end -->
@@ -226,27 +243,27 @@
             <div id="user-content" >
               <div class="user-big-box">
                   <img src="./img/account .png" alt="">
-                  <p>xyz</p>
+                  <p>Account Overview</p>
               </div>
               <div class="user-big-box">
-                  <img src="" alt="">
-                  <p></p>
+                  <img src="./img/order.png" alt="">
+                  <p>Order details</p>
               </div>
               <div class="user-big-box">
-                  <img src="" alt="">
-                  <p></p>
+                  <img src="./img/wishlist.png" alt="">
+                  <p>Wishlist</p>
               </div>
               <div class="user-big-box">
-                  <img src="" alt="">
-                  <p></p>
+                  <img src="./img/payment.png" alt="">
+                  <p>Payment history</p>
               </div>
               <div class="user-small-box">
-                  <img src="./img/account .png" alt="">
-                  <p>asd</p>
+                  <img src="./img/help.png" alt="">
+                  <p>Help and More</p>
               </div>
               <div class="user-small-box">
-                  <img src="" alt="">
-                  <p></p>
+                  <img src="./img/logout.png" alt="">
+                  <p>Log out</p>
               </div>  
             </div>
             <!-- user-content end -->
@@ -658,23 +675,32 @@
                 <img src="img/step1.png" alt="" class="step-image">
                 <h5 class="step-name">Select Products</h5>
                 <p class="step-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                    Choose from wide range of products
+                    from Buniyadi by different category,
+                    filters and others. You can use wishlist
+                    to order at later time
                 </p>
             </div>
 
             <div class="step">
                 <img src="img/step2.png" alt="" class="step-image">
-                <h5 class="step-name">Select Products</h5>
+                <h5 class="step-name">Order and Pay</h5>
                 <p class="step-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                    Go to Cart page and Order Your
+                    products by giving your delivery
+                    address. You can choose from your
+                    preferred payment method to order  
                 </p>
             </div>
 
             <div class="step">
                 <img src="img/step3.png" alt="" class="step-image">
-                <h5 class="step-name">Select Products</h5>
+                <h5 class="step-name">Fast Delivery</h5>
                 <p class="step-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                    Buniyadi will deliver your product at
+                    your convenient time. We are seriously
+                    committed to maintain quality
+                    assurance for our customers
                 </p>
             </div>
         </div>
@@ -686,23 +712,29 @@
         <div class="why-steps">
             <div class="why-step">
                 <img src="img/why-choose1.png" alt="" class="why-step-image">
-                <h5 class="why-step-name">Select Products</h5>
+                <h5 class="why-step-name">In-House Products</h5>
                 <p class="why-step-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                    Buniyadi is in-house souring
+                    products for us. So we are
+                    maintaining quality & commitment
+                    in a more direct way
                 </p>
             </div>
 
             <div class="why-step">
                 <img src="img/why-choose2.png" alt="" class="why-step-image">
-                <h5 class="why-step-name">Select Products</h5>
+                <h5 class="why-step-name">Nationwide Delivery</h5>
                 <p class="why-step-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                    Buniyadi is dedicated to deliver
+                    products national-wide in 64
+                    districts and all metropolitans.
+                    Buniyadi is here for you. 
                 </p>
             </div>
 
             <div class="why-step">
                 <img src="img/why-choose3.png" alt="" class="why-step-image">
-                <h5 class="why-step-name">Select Products</h5>
+                <h5 class="why-step-name">Quality Assurance</h5>
                 <p class="why-step-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
                 </p>
@@ -710,9 +742,12 @@
 
             <div class="why-step">
                 <img src="img/why-choose4.png" alt="" class="why-step-image">
-                <h5 class="why-step-name">Select Products</h5>
+                <h5 class="why-step-name">Secure Payment</h5>
                 <p class="why-step-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                    Buniyadi will deliver your
+                    product at your convenient
+                    time. We are seriously
+                    committed to maintain 
                 </p>
             </div>
         </div>
@@ -724,23 +759,23 @@
         <h3 class="box-title">Featured Post</h3>
         <div class="feature-steps">
             <div class="feature-step" id="feature-1" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url('./img/feature.png');">
-                <h5 class="feature-days">Select Products</h5>
+                <h5 class="feature-days">3 Days ago</h5>
                 <p class="feature-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                    Buniyadi is featured in FutureStartup
                 </p>
             </div>
 
             <div class="feature-step" id="feature-2"  style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url('./img/feature2.png');">
-                <h5 class="feature-days">Select Products</h5>
+                <h5 class="feature-days">10 Daya ago</h5>
                 <p class="feature-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                    10 Items to get ready for Spring
                 </p>
             </div>
 
             <div class="feature-step" id="feature-3" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url('./img/feature3.png');">
-                <h5 class="feature-days">Select Products</h5>
+                <h5 class="feature-days">3 Weeks ago</h5>
                 <p class="feature-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia.
+                    Buniyadi has partnered with City Bank.
                 </p>
             </div>
         </div>
@@ -793,22 +828,22 @@
                  <h4>Delivery</h4>
                  <br>
                  <a href="">complain and return</a>
-                 <a href="">complain and return</a>
-                 <a href="">complain and return</a>
+                 <a href="">Shipping & Delivery</a>
+                 <a href="">FAQs</a>
                 </div>
              <div class="footer-content-small">
                 <h4>Offer</h4>
                 <br> 
-                <a href="">complain and return</a>
-                 <a href="">complain and return</a>
-                 <a href="">complain and return</a>
+                <a href="">Affiliate Marketing</a>
+                 <a href="">Current Offers</a>
+                 <a href="">Coupons</a>
              </div>
              <div class="footer-content-small">
                 <h4>Get in touch</h4>
                 <br>
-                <a href="">complain and return</a>
-                 <a href="">complain and return</a>
-                 <a href="">complain and return</a>
+                <a href="">Careers</a>
+                 <a href="">Corporate</a>
+                 <a href="">About Company</a>
              </div>
          </div>   
         </div>

@@ -64,22 +64,26 @@ body header .inp-holder input {
 
 body header .inp-holder input::-webkit-input-placeholder {
   text-align: center;
-  font-family: "Font Awesome\ 5 Solid";
+  font-family: "FontAwesome";
+  font-size: 30px;
 }
 
 body header .inp-holder input:-ms-input-placeholder {
   text-align: center;
-  font-family: "Font Awesome\ 5 Solid";
+  font-family: "FontAwesome";
+  font-size: 30px;
 }
 
 body header .inp-holder input::-ms-input-placeholder {
   text-align: center;
-  font-family: "Font Awesome\ 5 Solid";
+  font-family: "FontAwesome";
+  font-size: 30px;
 }
 
 body header .inp-holder input::placeholder {
   text-align: center;
-  font-family: "Font Awesome\ 5 Solid";
+  font-family: "FontAwesome";
+  font-size: 30px;
 }
 
 body header .inp-holder input:focus {
@@ -127,6 +131,10 @@ body header .inp-holder + #search-card .main-search-box {
   display: flex;
 }
 
+body header .inp-holder + #search-card .main-search-box img {
+  width: 50px;
+}
+
 body header .inp-holder + #search-card .main-search-box input {
   font-size: 3.70vh;
   border: none;
@@ -165,6 +173,10 @@ body header .inp-holder + #search-card .trending {
   display: -ms-flexbox;
   display: flex;
   padding: 30px 10px;
+}
+
+body header .inp-holder + #search-card .trending img {
+  width: 50px;
 }
 
 body header .inp-holder + #search-card .trending p {
@@ -216,6 +228,11 @@ body header .btn-container .info-btn {
   border: none;
   position: relative;
   outline: none;
+  cursor: pointer;
+}
+
+body header .btn-container .info-btn:hover {
+  opacity: 0.7;
 }
 
 body header .btn-container .info-btn .notif {
@@ -369,6 +386,67 @@ body header .btn-container .info-btn + #bell-content {
   overflow: auto;
 }
 
+body header .btn-container .info-btn + #bell-content .four-btn {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 26px 26px;
+      grid-template-rows: 26px 26px;
+}
+
+body header .btn-container .info-btn + #bell-content .four-btn div {
+  padding-left: 10px;
+  margin-bottom: 1vh;
+  background: #ededed;
+}
+
+body header .btn-container .info-btn + #bell-content .four-btn div a {
+  color: black;
+}
+
+body header .btn-container .info-btn + #bell-content .four-btn .green-btn {
+  background: #00a50d;
+  color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0 1px 2px gray;
+          box-shadow: 0 1px 2px gray;
+}
+
+body header .btn-container .info-btn + #bell-content .four-btn .white-btn {
+  background: white;
+  -webkit-box-shadow: 0 1px 2px gray;
+          box-shadow: 0 1px 2px gray;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+body header .btn-container .info-btn + #bell-content .bell-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px;
+}
+
+body header .btn-container .info-btn + #bell-content .bell-body .bell-row {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+body header .btn-container .info-btn + #bell-content .bell-body .bell-row .date {
+  font-size: 10px;
+}
+
+body header .btn-container .info-btn + #bell-content .bell-body .bell-row p {
+  font-size: 13px;
+  text-align: justify;
+}
+
 body header .btn-container .info-btn + #bell-content.open {
   display: block;
 }
@@ -383,6 +461,7 @@ body header .btn-container .usr-img {
   outline: none;
   -webkit-box-shadow: 0 2px 4px grey;
           box-shadow: 0 2px 4px grey;
+  cursor: pointer;
 }
 
 body header .btn-container .usr-img + #user-content {
@@ -428,7 +507,7 @@ body header .btn-container .usr-img + #user-content.open .user-big-box img {
 }
 
 body header .btn-container .usr-img + #user-content.open .user-big-box p {
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   margin-bottom: 5px;
 }
@@ -458,7 +537,6 @@ body header .btn-container .usr-img + #user-content.open .user-big-box:nth-child
 }
 
 body header .btn-container .usr-img + #user-content.open .user-small-box {
-  background: lightgreen;
   border: 1px solid gray;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -476,7 +554,7 @@ body header .btn-container .usr-img + #user-content.open .user-small-box img {
 }
 
 body header .btn-container .usr-img + #user-content.open .user-small-box p {
-  font-size: 18px;
+  font-size: 10px;
 }
 
 body header .btn-container .usr-img + #user-content.open .user-small-box:nth-child(1) {
@@ -807,7 +885,6 @@ body main .why-steps .why-step .why-step-text {
 
 body main .feature-steps {
   height: 50vh;
-  border: 2px solid grey;
   margin-bottom: 3vh;
   display: -webkit-box;
   display: -ms-flexbox;

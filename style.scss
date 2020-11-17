@@ -52,7 +52,8 @@ body {
 
         &::placeholder {
           text-align: center;
-          font-family: "Font Awesome\ 5 Solid";
+          font-family: "FontAwesome";
+          font-size: 30px;
         }
 
         &:focus{
@@ -98,6 +99,9 @@ body {
           border-bottom: 1px solid grey;
           padding: 30px 10px;
           display: flex;
+          img {
+            width: 50px;
+          }
           input {
             font-size: 3.70vh;
             border: none;
@@ -131,6 +135,10 @@ body {
           border-bottom: 1px solid grey;
           display: flex;
           padding: 30px 10px;
+
+          img {
+            width: 50px;
+          }
           
           p {
             font-size: 3.7vh;
@@ -174,6 +182,11 @@ body {
         border: none;
         position: relative;
         outline: none;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.7;
+        }
 
         .notif {
           position: fixed;
@@ -302,6 +315,60 @@ body {
           height: 23.98vh;
           box-shadow: 0 10px 20px rgba($color: black, $alpha: 0.6);
           overflow: auto;
+
+          .four-btn {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 26px 26px;
+
+            div {
+              padding-left: 10px;
+              margin-bottom: 1vh;
+              background: #ededed;
+
+              a {
+                color: black;
+              }
+            }
+            .green-btn {
+              background: #00a50d;
+              color: white;
+              border-top-left-radius: 5px;
+              border-bottom-left-radius: 5px;
+              border: none;
+              outline: none;
+              box-shadow: 0 1px 2px gray;
+            }
+            .white-btn {
+
+              background: white;
+              box-shadow: 0 1px 2px gray;
+              border-top-right-radius: 5px;
+              border-bottom-right-radius: 5px;
+              border: none;
+              outline: none;
+
+            }
+          }
+
+          .bell-body {
+            flex: 1;
+            padding: 10px;
+
+            .bell-row {
+              width: 100%;
+              margin-bottom: 20px;
+
+              .date {
+                font-size: 10px;
+              }
+              p {
+                font-size: 13px;
+                text-align: justify;
+              }
+            }
+          }
+          
         } 
         &+#bell-content.open {
           display: block;
@@ -317,6 +384,7 @@ body {
         border: none;
         outline: none;
         box-shadow: 0 2px 4px grey;
+        cursor: pointer;
 
         &+#user-content {
           display: none;
@@ -352,7 +420,7 @@ body {
               margin: auto;
             }
             p {
-              font-size: 20px;
+              font-size: 15px;
               text-align: center;
               margin-bottom: 5px;
             }
@@ -371,7 +439,7 @@ body {
             }
           }
           .user-small-box {
-            background: lightgreen;
+            // background: lightgreen;
             border: 1px solid gray;
             display: flex;
             align-items: center;
@@ -382,7 +450,7 @@ body {
               margin-right: 5px;
             }
             p {
-              font-size: 18px;
+              font-size: 10px;
             }
 
             &:nth-child(1) {
@@ -637,7 +705,7 @@ body {
     }
     .feature-steps {
         height: 50vh;
-        border: 2px solid grey;
+        // border: 2px solid grey;
         margin-bottom: 3vh;
   
         display: flex;
