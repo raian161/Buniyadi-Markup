@@ -649,13 +649,14 @@ body main .holder .my-order {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  overflow: auto;
 }
 
 body main .holder .my-order .my-card {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background: lightgray;
+  background: #ededed;
   height: 30%;
   width: 90%;
   position: relative;
@@ -689,7 +690,7 @@ body main .holder .my-order .my-card .para {
   position: absolute;
   border: 1px solid gray;
   border-radius: 5px;
-  background: lightblue;
+  background: #D0CBC1;
   border: none;
   padding: 2px;
   -webkit-box-align: center;
@@ -707,7 +708,7 @@ body main .holder .my-order .my-card .ex {
   position: absolute;
   border: 1px solid gray;
   border-radius: 5px;
-  background: lightgreen;
+  background: #D0CBC1;
   border: none;
   padding: 2px;
   -webkit-box-align: center;
@@ -850,7 +851,16 @@ body main .holder .order-detail .step-parent .step-holder .not-done {
   background: white;
 }
 
-body main .holder .order-detail .row-item {
+body main .holder .order-detail .container-last {
+  height: 280px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: auto;
+  position: relative;
+}
+
+body main .holder .order-detail .container-last .row-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -867,12 +877,12 @@ body main .holder .order-detail .row-item {
   border: none;
 }
 
-body main .holder .order-detail .row-item img {
+body main .holder .order-detail .container-last .row-item img {
   height: 80px;
   width: 80px;
 }
 
-body main .holder .order-detail .row-item .item {
+body main .holder .order-detail .container-last .row-item .item {
   -webkit-box-flex: 5;
       -ms-flex: 5;
           flex: 5;
@@ -883,19 +893,19 @@ body main .holder .order-detail .row-item .item {
   padding: 0px;
 }
 
-body main .holder .order-detail .row-item .item2 {
+body main .holder .order-detail .container-last .row-item .item2 {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
 }
 
-body main .holder .order-detail .row-item .item3 {
+body main .holder .order-detail .container-last .row-item .item3 {
   -webkit-box-flex: 2.7;
       -ms-flex: 2.7;
           flex: 2.7;
 }
 
-body main .holder .order-detail .row-item2 {
+body main .holder .order-detail .container-last .row-item2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -912,12 +922,12 @@ body main .holder .order-detail .row-item2 {
   border: none;
 }
 
-body main .holder .order-detail .row-item2 img {
+body main .holder .order-detail .container-last .row-item2 img {
   height: 80px;
   width: 80px;
 }
 
-body main .holder .order-detail .row-item2 .item {
+body main .holder .order-detail .container-last .row-item2 .item {
   -webkit-box-flex: 6;
       -ms-flex: 6;
           flex: 6;
@@ -928,7 +938,7 @@ body main .holder .order-detail .row-item2 .item {
   padding: 0px;
 }
 
-body main .holder .order-detail .row-item2 .item2 {
+body main .holder .order-detail .container-last .row-item2 .item2 {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
@@ -948,7 +958,7 @@ body main .holder .card {
 }
 
 body main .holder .card .general-card1 {
-  background: lightgray;
+  background: #ededed;
   margin-top: 20px;
   padding: 20px;
   height: 200px;

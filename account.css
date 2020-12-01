@@ -1341,7 +1341,7 @@ body footer .footer-bottom .copyright p {
     background-color: white;
     width: 5.88vw;
     height: 4.62vh;
-    font-size: 3.70vh;
+    font-size: 3.7vh;
     color: red;
     border-radius: 20px;
     border: 2px solid red;
@@ -1366,7 +1366,7 @@ body footer .footer-bottom .copyright p {
     width: 30px;
   }
   body header .inp-holder + #search-card .main-search-box input {
-    font-size: 3.70vh;
+    font-size: 3.7vh;
     border: none;
     outline: none;
     -webkit-box-flex: 1;
@@ -1378,7 +1378,7 @@ body footer .footer-bottom .copyright p {
     background: white;
     width: 2.5vw;
     height: 3.25vh;
-    font-size: 3.70vh;
+    font-size: 3.7vh;
     color: grey;
     border: none;
     outline: none;
@@ -1387,7 +1387,7 @@ body footer .footer-bottom .copyright p {
     background-color: green;
     width: 5.88vw;
     height: 4.62vh;
-    font-size: 3.70vh;
+    font-size: 3.7vh;
     color: white;
     border-radius: 20px;
     border: none;
@@ -1683,7 +1683,7 @@ body footer .footer-bottom .copyright p {
     -ms-grid-rows: 12vh 12vh 6vh;
         grid-template-rows: 12vh 12vh 6vh;
     grid-gap: 5px;
-        grid-template-areas: 'bg1 bg2' 'bg3 bg4' 'sm1 sm2';
+        grid-template-areas: "bg1 bg2" "bg3 bg4" "sm1 sm2";
   }
   body header .btn-container .usr-img + #user-content.open .user-big-box {
     background: #fcfcfc;
@@ -1920,6 +1920,19 @@ body footer .footer-bottom .copyright p {
     padding: 20px 0;
     font-size: 30px;
   }
+  body main .main-content .details .switch-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    border: 2px solid red;
+  }
+  body main .main-content .details .delete-btn-account {
+    background: green !important;
+  }
   body main .main-content .details .other {
     padding: 10px;
     -webkit-box-flex: 2;
@@ -1992,7 +2005,7 @@ body footer .footer-bottom .copyright p {
         -ms-flex: 2.5;
             flex: 2.5;
     background: #f0f0f0;
-    padding: 2vh 6.0vw;
+    padding: 2vh 6vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2024,7 +2037,7 @@ body footer .footer-bottom .copyright p {
     padding: 0 20px;
   }
   body footer .footer-top .footer-info .footer-info-small p {
-    font-size: 2.80vh;
+    font-size: 2.8vh;
     margin-left: 30px;
   }
   body footer .footer-top .footer-info .footer-info-big {
@@ -2041,7 +2054,7 @@ body footer .footer-bottom .copyright p {
   }
   body footer .footer-top .footer-info .footer-info-big p {
     margin-left: 200px;
-    font-size: 3.00vh;
+    font-size: 3vh;
   }
   body footer .footer-top .footer-info .footer-info-big .icons {
     -webkit-box-flex: 1;

@@ -518,10 +518,11 @@
             align-items: center;
             //justify-content: center;
             justify-content: space-around;
+            overflow: auto;
 
             .my-card {
               flex: 1;
-              background: lightgray;
+              background: #ededed;
               height: 30%;
               width: 90%;
               position: relative;
@@ -553,7 +554,7 @@
                   position: absolute;
                   border: 1px solid gray;
                   border-radius: 5px;
-                  background: lightblue;
+                  background: #D0CBC1;
                   border: none;
                   padding: 2px;
                  
@@ -572,7 +573,7 @@
                   position: absolute;
                   border: 1px solid gray;
                   border-radius: 5px;
-                  background: lightgreen;
+                  background: #D0CBC1;
                   border: none;
                   padding: 2px;
                  
@@ -702,59 +703,126 @@
                 }
               }
             }
-            .row-item {
-              display: flex;
-              flex-direction: row;
-              padding: 10px;
-              font-size: 25px;
-              margin-left: 25px;
-              border: 1px solid gray;
-              background: lightgray;
-              border-radius: 10px;
-              border: none;
-              
-              img {
-                height: 80px;
-                width: 80px;
-              }
-              .item{
-                flex: 5;
-                display: flex;
-                padding: 10px;
-                padding: 0px;
-              }
-              .item2 {
-                flex: 3;
-              }
-              .item3 {
-                flex: 2.7;
-              }
+            .container-last {
+             
+              height: 280px;
+              flex: 1;
+              overflow: auto;
+              position: relative;
+              .row-item {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 10px;
+                    font-size: 25px;
+                    margin-left: 25px;
+                    border: 1px solid gray;
+                    background: lightgray;
+                    border-radius: 10px;
+                    border: none;
+                  
+                    
+                    
+                    img {
+                      height: 80px;
+                      width: 80px;
+                    }
+                    .item{
+                      flex: 5;
+                      display: flex;
+                      padding: 10px;
+                      padding: 0px;
+                    }
+                    .item2 {
+                      flex: 3;
+                    }
+                    .item3 {
+                      flex: 2.7;
+                    }
+                  }
+                  .row-item2 {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 0px;
+                    font-size: 25px;
+                    margin-left: 25px;
+                    border: 1px solid gray;
+                    background: white;
+                    margin-top: 2px;
+                    border: none;
+                    
+                    img {
+                      height: 80px;
+                      width: 80px;
+                    }
+                    .item{
+                      flex: 6;
+                      display: flex;
+                      padding: 10px;
+                      padding: 0px;
+                    }
+                    .item2 {
+                      flex: 3;
+                    }
+                  }
             }
-            .row-item2 {
-              display: flex;
-              flex-direction: row;
-              padding: 0px;
-              font-size: 25px;
-              margin-left: 25px;
-              border: 1px solid gray;
-              background: white;
-              margin-top: 2px;
-              border: none;
-              
-              img {
-                height: 80px;
-                width: 80px;
-              }
-              .item{
-                flex: 6;
-                display: flex;
-                padding: 10px;
-                padding: 0px;
-              }
-              .item2 {
-                flex: 3;
-              }
-            }
+
+            // .container-last {
+            //   overflow: auto;
+            //   .row-item {
+            //     display: flex;
+            //     flex-direction: row;
+            //     padding: 10px;
+            //     font-size: 25px;
+            //     margin-left: 25px;
+            //     border: 1px solid gray;
+            //     background: lightgray;
+            //     border-radius: 10px;
+            //     border: none;
+                
+                
+            //     img {
+            //       height: 80px;
+            //       width: 80px;
+            //     }
+            //     .item{
+            //       flex: 5;
+            //       display: flex;
+            //       padding: 10px;
+            //       padding: 0px;
+            //     }
+            //     .item2 {
+            //       flex: 3;
+            //     }
+            //     .item3 {
+            //       flex: 2.7;
+            //     }
+            //   }
+            //   .row-item2 {
+            //     display: flex;
+            //     flex-direction: row;
+            //     padding: 0px;
+            //     font-size: 25px;
+            //     margin-left: 25px;
+            //     border: 1px solid gray;
+            //     background: white;
+            //     margin-top: 2px;
+            //     border: none;
+                
+            //     img {
+            //       height: 80px;
+            //       width: 80px;
+            //     }
+            //     .item{
+            //       flex: 6;
+            //       display: flex;
+            //       padding: 10px;
+            //       padding: 0px;
+            //     }
+            //     .item2 {
+            //       flex: 3;
+            //     }
+            //   }
+            // }
             
         }
 
@@ -772,7 +840,7 @@
                 display: flex;
                 justify-content: space-around;
               .general-card1 {
-                background: lightgray;
+                background: #ededed;
                 margin-top: 20px;
                 padding: 20px;
                 height: 200px;
