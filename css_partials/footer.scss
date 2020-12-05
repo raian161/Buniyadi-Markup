@@ -1,0 +1,603 @@
+footer {
+  background: deepskyblue;
+  grid-area: f;
+  //padding: 0 6.51vw;
+  color: grey;
+
+  display: flex;
+  flex-direction: column;
+
+  .footer-top {
+    flex: 2.5;
+    background: #f0f0f0;
+    padding: 2vh 6.51vw;
+
+    display: flex;
+    flex-direction: column;
+
+    .footer-info {
+      flex: 1;
+      border-bottom: 2px solid gray;
+      display: flex;
+
+      .footer-info-small {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        p {
+          font-size: 2.96vh;
+          margin-left: auto;
+        }
+      }
+      .footer-info-big {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        p {
+          margin-left: 200px;
+          font-size: 2.77vh;
+        }
+        .icons {
+          flex: 1;
+          padding: 0 10px;
+          display: flex;
+          & > * {
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+    .footer-content {
+      flex: 3;
+      padding: 30px;
+
+      display: flex;
+
+      .footer-content-big {
+        flex: 2;
+        height: 19.67vh;
+        margin: 0 10px;
+
+        &:nth-child(1) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .footer-search {
+            display: flex;
+
+            height: 6.57vh;
+            width: 100%;
+
+            input {
+              flex: 1;
+              border-radius: 10px;
+              border: none;
+              padding: 20px;
+            }
+            button {
+              background-size: cover;
+              background: #00a50d;
+              width: 3.9vw;
+              border-radius: 10px;
+              border: none;
+            }
+          }
+        }
+        &:nth-child(2) {
+          background-image: url(img/payment-methods.png);
+          background-size: cover;
+        }
+      }
+
+      .footer-content-small {
+        flex: 1;
+        height: 19.67vh;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+        h4 {
+          padding: 10px;
+          font-size: 25px;
+        }
+        a {
+          text-decoration: none;
+          color: grey;
+          font-size: 22px;
+          margin-bottom: 1vh;
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    flex: 1;
+    background: white;
+    padding: 1vh 3.67vw;
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    p {
+      font-size: 20px;
+    }
+    .copyright {
+      margin-top: auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      p {
+        width: 26.3vw;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+// iPad Pro --> laptop
+@media (min-width: 1026px) and (max-width: 1366px) {
+  footer {
+    background: deepskyblue;
+    grid-area: f;
+    //padding: 0 6.51vw;
+    color: grey;
+
+    display: flex;
+    flex-direction: column;
+
+    .footer-top {
+      flex: 2.5;
+      background: #f0f0f0;
+      padding: 2vh 6vw;
+
+      display: flex;
+      flex-direction: column;
+
+      .footer-info {
+        flex: 1;
+        border-bottom: 2px solid gray;
+        display: flex;
+        padding: 5px;
+
+        .footer-info-small {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          padding: 0 20px;
+          p {
+            font-size: 2.8vh;
+            margin-left: 30px;
+          }
+        }
+        .footer-info-big {
+          flex: 2;
+          display: flex;
+          align-items: center;
+          padding: 0 10px;
+          p {
+            margin-left: 200px;
+            font-size: 3vh;
+          }
+          .icons {
+            flex: 1;
+            padding: 0 10px;
+            display: flex;
+            & > * {
+              margin: 0 5px;
+            }
+          }
+        }
+      }
+      .footer-content {
+        flex: 3;
+        padding: 30px;
+
+        display: flex;
+
+        .footer-content-big {
+          flex: 2;
+          height: 19.67vh;
+          margin: 0 10px;
+
+          &:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .footer-search {
+              display: flex;
+
+              height: 6.57vh;
+              width: 100%;
+
+              input {
+                flex: 1;
+                border-radius: 10px;
+                border: none;
+                padding: 20px;
+              }
+              button {
+                background-size: cover;
+                background: #00a50d;
+                width: 3.9vw;
+                border-radius: 10px;
+                border: none;
+              }
+            }
+          }
+          &:nth-child(2) {
+            background-image: url(img/payment-methods.png);
+            background-size: cover;
+          }
+        }
+
+        .footer-content-small {
+          flex: 1;
+          height: 19.67vh;
+          margin: 0px 10px;
+          display: flex;
+          flex-direction: column;
+          h4 {
+            padding: 3px;
+            font-size: 20px;
+          }
+          a {
+            text-decoration: none;
+            color: grey;
+            font-size: 17px;
+            margin-bottom: 1vh;
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      flex: 1;
+      background: white;
+      padding: 1vh 3.67vw;
+      display: flex;
+      flex-direction: column;
+      color: grey;
+      p {
+        font-size: 17px;
+      }
+      .copyright {
+        margin-top: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        p {
+          width: 26.3vw;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+// iPad Pro screen size width1025-->
+@media (max-width: 1024px) {
+  footer {
+    background: deepskyblue;
+    grid-area: f;
+    //padding: 0 6.51vw;
+    color: grey;
+
+    display: flex;
+    flex-direction: column;
+
+    .footer-top {
+      flex: 2.5;
+      background: #f0f0f0;
+      padding: 2vh 6vw;
+
+      display: flex;
+      flex-direction: column;
+
+      .footer-info {
+        flex: 1;
+        border-bottom: 2px solid gray;
+        display: flex;
+        padding: 5px;
+
+        .footer-info-small {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          padding: 0 20px;
+          p {
+            font-size: 2.8vh;
+            margin-left: 10px;
+          }
+        }
+        .footer-info-big {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          padding: 0 10px;
+          p {
+            margin-left: 30px;
+            font-size: 3vh;
+          }
+          .icons {
+            flex: 1;
+            padding: 0 10px;
+            display: flex;
+            & > * {
+              margin: 0 5px;
+            }
+          }
+        }
+      }
+      .footer-content {
+        flex: 3;
+        padding: 30px;
+
+        display: grid;
+        grid-template-columns: repeat(6, 2fr);
+        grid-template-rows: 150px auto;
+        grid-template-areas:
+          "search search search payment payment payment"
+          "c1 c1 c2 c2 c3 c3";
+
+        .footer-content-big {
+          flex: 2;
+          height: 25.67vh;
+          margin: 0 2px;
+          width: 60vh;
+
+          &:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            grid-area: search;
+
+            .footer-search {
+              display: flex;
+
+              height: 6.57vh;
+              width: 100%;
+
+              input {
+                flex: 1;
+                border-radius: 10px;
+                border: none;
+                padding: 20px;
+              }
+              button {
+                background-size: cover;
+                background: #00a50d;
+                width: 3.9vw;
+                border-radius: 10px;
+                border: none;
+              }
+            }
+          }
+          &:nth-child(2) {
+            background-image: url(img/payment-methods.png);
+            background-size: cover;
+            grid-area: payment;
+          }
+        }
+
+        .footer-content-small {
+          height: 19.67vh;
+          margin: 0px 10px;
+          display: flex;
+          flex-direction: column;
+          &:nth-child(1) {
+            grid-area: c1;
+          }
+
+          &:nth-child(2) {
+            grid-area: c2;
+            margin-left: 1000px;
+          }
+
+          &:nth-child(3) {
+            grid-area: c3;
+            margin-right: 100px !important;
+          }
+
+          h4 {
+            padding: 3px;
+            font-size: 20px;
+          }
+          a {
+            text-decoration: none;
+            color: grey;
+            font-size: 17px;
+            margin-bottom: 1vh;
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      flex: 1;
+      background: white;
+      padding: 1vh 3.67vw;
+      display: flex;
+      flex-direction: column;
+      color: grey;
+      p {
+        font-size: 17px;
+      }
+      .copyright {
+        margin-top: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        p {
+          width: 26.3vw;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+// Moblie
+@media (max-width: 414px) {
+  footer {
+    background: deepskyblue;
+    grid-area: f;
+    //padding: 0 6.51vw;
+    color: grey;
+
+    display: flex;
+    flex-direction: column;
+
+    .footer-top {
+      flex: 2.5;
+      background: #f0f0f0;
+      padding: 2vh 6vw;
+
+      display: flex;
+      flex-direction: column;
+
+      .footer-info {
+        flex: 1;
+        border-bottom: 2px solid gray;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+
+        .footer-info-small {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          padding: 0 20px;
+          p {
+            font-size: 1.8vh;
+            margin-left: 10px;
+          }
+          img {
+            height: 25px;
+            width: 25px;
+          }
+        }
+        .footer-info-big {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          padding: 0 10px;
+          p {
+            margin-left: 10px;
+            font-size: 2vh;
+          }
+          .icons {
+            flex: 1;
+            padding: 0 5px;
+            display: flex;
+            & > * {
+              margin: 0 1px;
+            }
+          }
+        }
+      }
+      .footer-content {
+        flex: 3;
+        padding: 30px;
+
+        display: grid;
+        grid-template-columns: repeat(6, 2fr);
+        grid-template-rows: 150px auto;
+        grid-template-areas: 
+              //'search search search payment payment payment'
+          "c1 c1 c2 c2 c3 c3";
+
+        .footer-content-big {
+          flex: 2;
+          height: 25.67vh;
+          margin: 0 2px;
+          width: 60vh;
+
+          &:nth-child(1) {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            grid-area: search;
+
+            .footer-search {
+              display: flex;
+
+              height: 6.57vh;
+              width: 100%;
+
+              input {
+                flex: 1;
+                border-radius: 10px;
+                border: none;
+                padding: 20px;
+              }
+              button {
+                background-size: cover;
+                background: #00a50d;
+                width: 3.9vw;
+                border-radius: 10px;
+                border: none;
+              }
+            }
+          }
+          &:nth-child(2) {
+            background-image: url("../img/payment-methods.png");
+            background-size: cover;
+            grid-area: payment;
+            display: none;
+          }
+        }
+
+        .footer-content-small {
+          height: 19.67vh;
+          margin: 0px 10px;
+          display: flex;
+          flex-direction: column;
+          &:nth-child(1) {
+            grid-area: c1;
+          }
+
+          &:nth-child(2) {
+            grid-area: c2;
+            margin-left: 1000px;
+          }
+
+          &:nth-child(3) {
+            grid-area: c3;
+            margin-right: 100px !important;
+          }
+
+          h4 {
+            padding: 3px;
+            font-size: 20px;
+          }
+          a {
+            text-decoration: none;
+            color: grey;
+            font-size: 17px;
+            margin-bottom: 1vh;
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      flex: 1;
+      background: white;
+      padding: 1vh 3.67vw;
+      display: flex;
+      flex-direction: column;
+      color: grey;
+      p {
+        font-size: 12px;
+      }
+      .copyright {
+        margin-top: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        p {
+          width: 15.3vw;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
