@@ -143,7 +143,7 @@ footer .footer-top .footer-content .footer-content-big:nth-child(1) .footer-sear
 }
 
 footer .footer-top .footer-content .footer-content-big:nth-child(2) {
-  background-image: url(img/payment-methods.png);
+  background-image: url("../img/payment-methods.png");
   background-size: cover;
 }
 
@@ -342,7 +342,7 @@ footer .footer-bottom .copyright p {
     border: none;
   }
   footer .footer-top .footer-content .footer-content-big:nth-child(2) {
-    background-image: url(img/payment-methods.png);
+    background-image: url("../img/payment-methods.png");
     background-size: cover;
   }
   footer .footer-top .footer-content .footer-content-small {
@@ -544,7 +544,7 @@ footer .footer-bottom .copyright p {
     border: none;
   }
   footer .footer-top .footer-content .footer-content-big:nth-child(2) {
-    background-image: url(img/payment-methods.png);
+    background-image: url("../img/payment-methods.png");
     background-size: cover;
     -ms-grid-row: 1;
     -ms-grid-column: 4;

@@ -624,7 +624,7 @@ body {
       }
       .side-container {
           flex: 1;
-          background: red;
+          background:white;
           min-height: 72vh;
           display: flex;
           flex-direction: column;
@@ -646,6 +646,8 @@ body {
                   color: white;
               }
           }
+          
+          
       }
     }
   }

@@ -771,7 +771,7 @@ body main .main-container .side-container {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background: red;
+  background: white;
   min-height: 72vh;
   display: -webkit-box;
   display: -ms-flexbox;

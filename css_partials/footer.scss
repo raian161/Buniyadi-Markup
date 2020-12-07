@@ -87,7 +87,7 @@ footer {
           }
         }
         &:nth-child(2) {
-          background-image: url(img/payment-methods.png);
+          background-image: url('../img/payment-methods.png');
           background-size: cover;
         }
       }
@@ -226,7 +226,7 @@ footer {
             }
           }
           &:nth-child(2) {
-            background-image: url(img/payment-methods.png);
+            background-image: url('../img/payment-methods.png');
             background-size: cover;
           }
         }
@@ -373,7 +373,7 @@ footer {
             }
           }
           &:nth-child(2) {
-            background-image: url(img/payment-methods.png);
+            background-image: url('../img/payment-methods.png');
             background-size: cover;
             grid-area: payment;
           }

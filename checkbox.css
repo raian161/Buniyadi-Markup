@@ -1,0 +1,41 @@
+.center label {
+  font-size: 26px;
+  padding: 20px;
+}
+
+.center label input[type='checkbox'] {
+  position: relative;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.center label input[type='checkbox']:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.center label input:checked[type='checkbox']:before {
+  border-left: none;
+  border-top: none;
+  width: 20px;
+  border-color: green;
+  -webkit-transform: rotate(45deg) translate(5px, -10px);
+          transform: rotate(45deg) translate(5px, -10px);
+}
+/*# sourceMappingURL=checkbox.css.map */
