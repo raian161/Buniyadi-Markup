@@ -28,12 +28,115 @@ body .modal {
 }
 
 body .modal .modal-content {
-  background-color: #fefefe;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
   width: 60%;
+  height: 70vh;
   /* The Close Button */
+}
+
+body .modal .modal-content .holder {
+  height: 50vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+}
+
+body .modal .modal-content .holder .image-container {
+  padding: 0px;
+  margin-bottom: 150px !important;
+}
+
+body .modal .modal-content .holder .image-container img {
+  width: 20vw;
+  height: 80vh;
+  border-radius: 20px;
+  background: green;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-box-shadow: 0px 1px 2px gray;
+          box-shadow: 0px 1px 2px gray;
+}
+
+body .modal .modal-content .holder .card-container {
+  background: white;
+  -webkit-box-shadow: 1px 1px 4px gray;
+          box-shadow: 1px 1px 4px gray;
+  height: 65vh;
+  width: 50vw;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body .modal .modal-content .holder .card-container .login {
+  background: white;
+  border: none;
+  padding: 50px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+body .modal .modal-content .holder .card-container .otp {
+  background: green;
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  height: 25px;
+}
+
+body .modal .modal-content .holder .card-container .input {
+  border: none;
+  width: 300px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+body .modal .modal-content .holder .card-container .input2 {
+  border: none;
+  width: 370px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+  outline: none;
+  margin-left: 0px !important;
+}
+
+body .modal .modal-content .holder .card-container .signup {
+  background: green;
+  color: white;
+  height: 35px;
+  border-radius: 20px;
+  width: 200px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+body .modal .modal-content .holder .card-container a {
+  color: gray;
 }
 
 body .modal .modal-content .close {
@@ -47,5 +150,71 @@ body .modal .modal-content .close:hover, body .modal .modal-content .close:focus
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (min-width: 993px) and (max-width: 1024px) {
+  body .modal .modal-content .holder .image-container img {
+    display: block;
+    height: 70vh;
+    width: 20vw;
+  }
+  body .modal .modal-content .holder .card-container {
+    margin-top: 50px;
+    height: 55vh;
+    margin-left: -15px !important;
+    width: 150vw !important;
+    padding: 20px;
+  }
+  body .modal .modal-content .holder .card-container .login {
+    background: none;
+  }
+  body .modal .modal-content .holder .card-container .input {
+    border: none;
+    width: 200px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 5px;
+  }
+  body .modal .modal-content .holder .card-container .input2 {
+    padding: 5px;
+    border: none;
+    width: 270px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+    outline: none;
+    margin-left: 0px !important;
+  }
+}
+
+@media (max-width: 414px) {
+  body .modal .modal-content .holder .image-container img {
+    display: none;
+  }
+  body .modal .modal-content .holder .card-container {
+    height: 65vh;
+    margin-left: -15px !important;
+    width: 110vw !important;
+  }
+  body .modal .modal-content .holder .card-container .login {
+    background: none;
+  }
+  body .modal .modal-content .holder .card-container .input {
+    border: none;
+    width: 200px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 5px;
+  }
+  body .modal .modal-content .holder .card-container .input2 {
+    padding: 5px;
+    border: none;
+    width: 270px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+    outline: none;
+    margin-left: 0px !important;
+  }
 }
 /*# sourceMappingURL=modal.css.map */

@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="switch.css">
     <title>Modal</title>
 </head>
 
@@ -19,20 +20,39 @@
 
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
-           <div class="holder">
-                <div>
+           
+           <class class="holder">
+                <div></div>
                     <div class="image-container">
-                    <img class="img" src="./img/banner.png" alt="">
+                    <img src="./img/login.jpg" alt="">
                 </div>
                 <div class="card-container">
                     <div class="login-flex">
-                        <button>Login</button>
-                        <button>Register</button>
+                        <div>
+                        <button class="login">Login/Register</button>
+                    </div>
+                    <div>
+                        <input class="input" type="text"placeholder="Mobile Number "><button  class="otp" >Send OTP</button>
+                    </div>
+                    <div>
+                        <input class="input2" type="text"placeholder="Enter OTP Code">
+                    </div>
+                        <div class="switch-container" style="display: flex; align-items: center; margin-left: 60px; padding: 10px">
+                            <label class="switch-lever">
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                            </label>
+                            <p style="margin-left: 10px; font-size: 15px">
+                                Keep Me Signed In
+                            </p>
+                        </div>
+                        <div>
+                        <button class="signup">Sign Up/Login</button>
+                    </div>
+                        <a href="Issues with logging in?">Issues with logging in?</a>
                     </div>
                 </div>
-                </div>
+                </class>
            </div>
         </div>
 

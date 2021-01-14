@@ -600,7 +600,7 @@ body main .holder .fourbox {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background: white;
+  background: red;
   padding: 20px;
 }
 
